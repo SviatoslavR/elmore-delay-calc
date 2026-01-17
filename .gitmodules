@@ -1,0 +1,6 @@
+[submodule "Parser-SPEF"]
+	path = Parser-SPEF
+	url = https://github.com/OpenTimer/Parser-SPEF.git
+[submodule "eigen-3.4.0"]
+	path = eigen-3.4.0
+	url = https://gitlab.com/libeigen/eigen.git
