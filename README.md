@@ -93,4 +93,4 @@ python test.py --path <ComputedResult> --golden <GoldenResult>
     *   **Physical (Working Set)**: 实际占用的物理内存。
     *   **Commit**: 程序申请的总内存 (包含虚拟内存)。
 
-**建议**: 在处理大型测试用例时，请确保机器有足够的可用内存。（在course.cpp中将print_memory_usage()注释去掉即可监控内存使用情况）
+**建议**: 在处理大型测试用例时，请确保机器有足够的可用内存。
