@@ -15,9 +15,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(USE_WERROR ON)
 
-set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_BUILD_TYPE Release)
 
-# find_package(OpenMP)
+find_package(OpenMP REQUIRED)
 
 set(CMAKE_CXX_FLAGS "-g -std=c++17 -lstdc++fs ${CMAKE_CXX_FLAGS}")
 set(CMAKE_EXE_LINKER_FLAGS"${CMAKE_EXE_LINKER_FLAGS}")
@@ -33,7 +33,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/build)
 
 #
 add_executable(course Tree/course.cpp Read_train/Read.cpp)
-target_link_libraries(course stdc++fs)
+target_link_libraries(course stdc++fs OpenMP::OpenMP_CXX)
 
 add_executable(parser_test Tree/parser_test.cpp)
 target_link_libraries(parser_test stdc++fs)
