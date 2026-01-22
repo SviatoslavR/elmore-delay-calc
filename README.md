@@ -44,7 +44,7 @@ cmake --build .
 | `--spef_num` / `-m` | **是** | 无 | 指定测试组编号 (例如 `0`, `1`)。程序将读取 `Group0.spef` 等文件。 |
 | `--file_path` / `-f` | 否 | `./Data` | 数据文件的根目录路径。 |
 | `--feature_path` / `-e` | 否 | `./features` | 计算结果输出的目录路径。 |
-| `--memory_usage` / '-s' | 否 | `false` | 是否打印内存使用情况。 |
+| `--memory_usage` / `-s` | 否 | `false` | 是否打印内存使用情况。 |
 
 **文件存放结构要求：**
 
